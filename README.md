@@ -2,15 +2,15 @@
 
 ## 📌 Identitas
 
-| Keterangan            | Detail                                         |
-| --------------------- | ---------------------------------------------- |
-| **Nama Mahasiswa**    | Hikma Nazwa Agustin                            |
-| **NPM**               | `[2513020076]`                                 |
-| **Program Studi**     | Sistem Informasi                               |
-| **Perguruan Tinggi**  | Universitas Nusantara PGRI Kediri              |
-| **Dosen Pengampu**    | `[Rudy Eko Prasetyo S.Kom., M.Kom.]`           |
-| **Link Repository**   | `https://github.com/hikmanazwaw/UTS-WEB-HIKMA` |
-| **Link Live Website** | `https://hikmanazwaw.github.io/UTS-WEB-HIKMA/` |
+| Keterangan            | Detail                                       |
+| --------------------- | -------------------------------------------- |
+| **Nama Mahasiswa**    | Hikma Nazwa Agustin                          |
+| **NPM**               | `[2513020076]`                               |
+| **Program Studi**     | Sistem Informasi                             |
+| **Perguruan Tinggi**  | Universitas Nusantara PGRI Kediri            |
+| **Dosen Pengampu**    | `[Rudy Eko Prasetyo S.Kom., M.Kom.]`         |
+| **Link Repository**   | https://github.com/hikmanazwaw/UTS-WEB-HIKMA |
+| **Link Live Website** | https://hikmanazwaw.github.io/UTS-WEB-HIKMA/ |
 
 ---
 
