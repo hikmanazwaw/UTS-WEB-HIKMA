@@ -1,77 +1,114 @@
-# Interactive Personal Portfolio - UTS Pemrograman Web
+# Portfolio | Hikma Nazwa Agustin
 
-Website portfolio satu halaman milik **Hikma Nazwa Agustin** (Sistem Informasi, Universitas Nusantara PGRI Kediri, semester 3). Dibuat dengan HTML5, Bootstrap 5, dan JavaScript dasar tanpa backend.
+## 📌 Identitas
 
-## Tujuan
-Menerapkan HTML semantik, Bootstrap 5, JavaScript function, event listener, dan manipulasi DOM, serta publikasi lewat GitHub Pages.
+| Keterangan            | Detail                                                                           |
+| --------------------- | -------------------------------------------------------------------------------- |
+| **Nama Mahasiswa**    | Hikma Nazwa Agustin                                                              |
+| **NPM**               | `[2513020076]`                                                                   |
+| **Program Studi**     | Sistem Informasi                                                                 |
+| **Perguruan Tinggi**  | Universitas Nusantara PGRI Kediri                                                |
+| **Dosen Pengampu**    | `[Rudy Eko Prasetyo S.Kom., M.Kom.]`                                             |
+| **Link Repository**   | [`https://github.com/hikmanazwaw/UTS-WEB-HIKMA`](https://github.com/hikmanazwaw) |
+| **Link Live Website** | [`https://hikmanazwaw.github.io/UTS-WEB-HIKMA/`](https://hikmanazwaw.github.io)  |
 
-## Fitur
-- Navbar responsif dengan hamburger menu dan tombol dark mode
-- Hero, About, Skills (progress bar), Projects, Tools, Contact, Footer
-- Pencarian proyek langsung (judul/deskripsi) dan filter kategori
-- Modal detail proyek (Lihat Detail dan Lihat Kode)
-- Kalkulator estimasi biaya website (validasi dan format Rupiah)
-- Validasi formulir kontak (hanya di browser, tidak mengirim ke server)
-- Tahun footer otomatis
+> Ganti bagian dalam tanda `[ ]` dengan data yang sebenarnya.
 
-## Teknologi
-HTML5, CSS3, Bootstrap 5.3 (CDN), Bootstrap Icons, JavaScript.
+---
 
-## Struktur Folder
+## 📖 Deskripsi
+
+Website portfolio interaktif satu halaman (_single page_) milik **Hikma Nazwa Agustin**, mahasiswa Sistem Informasi yang berfokus pada pengembangan aplikasi web dan solusi perangkat lunak yang fungsional, rapi, serta mudah digunakan. Website ini dibuat untuk memperkenalkan profil, keterampilan, dan proyek-proyek yang telah dikerjakan.
+
+## ✨ Fitur
+
+- **Navbar responsif** dengan menu Home, About, Skills, Projects, Tools, dan Contact.
+- **Mode terang/gelap (dark mode)** yang dapat diganti lewat tombol di navbar.
+- **Hero section** berisi perkenalan singkat dan tombol aksi (_Lihat Proyek_ dan _Hubungi Saya_).
+- **Tentang Saya** beserta kartu informasi singkat (nama, program studi, perguruan tinggi, hobi, minat utama).
+- **Keterampilan** dalam bentuk kartu dengan _progress bar_ yang diatur melalui atribut `data-level`.
+- **Proyek** dengan:
+  - filter kategori (Semua, HTML & CSS, JavaScript, Sistem Informasi),
+  - kolom pencarian berdasarkan judul atau deskripsi,
+  - _modal_ untuk melihat detail proyek.
+- **Desain responsif** untuk desktop, tablet, dan ponsel.
+- **Aksesibilitas dasar**: elemen semantik, atribut `aria-label`, dan `alt` pada gambar.
+
+## 🛠️ Teknologi yang Digunakan
+
+| Teknologi              | Kegunaan                                                  |
+| ---------------------- | --------------------------------------------------------- |
+| HTML5                  | Struktur halaman dengan elemen semantik                   |
+| CSS3                   | Tata letak, warna, dan transisi (`css/style.css`)         |
+| Bootstrap 5.3.3        | Grid, komponen, dan utility class                         |
+| Bootstrap Icons 1.11.3 | Ikon antarmuka                                            |
+| JavaScript             | Dark mode, filter & pencarian proyek, progress bar, modal |
+| Google Fonts           | Font _Plus Jakarta Sans_                                  |
+| Git & GitHub           | Version control dan publikasi                             |
+
+## 🧠 Keterampilan
+
+| Keterampilan          | Level |
+| --------------------- | ----- |
+| HTML5                 | 80%   |
+| CSS3                  | 70%   |
+| Bootstrap 5           | 65%   |
+| JavaScript Dasar      | 70%   |
+| DOM Manipulation      | 65%   |
+| Git dan GitHub        | 80%   |
+| Responsive Web Design | 65%   |
+
+## 🗂️ Proyek yang Ditampilkan
+
+1. **Personal Portfolio Website** — Website portfolio satu halaman dengan dark mode, filter proyek, kalkulator, dan validasi formulir. _(HTML5, CSS3, Bootstrap 5, JavaScript)_
+2. **Kota Madinah** — Rancangan sistem untuk informasi terkait Kota Madinah dan rekomendasi destinasi wisata. _(HTML, CSS, JavaScript)_ — [Repository](https://github.com/hikmanazwaw/kota-madinah)
+3. **Kopi Kenangan Senja** — Contoh aplikasi web kecil untuk pemesanan kopi di sebuah kafe. _(HTML, CSS, JavaScript)_ — [Repository](https://github.com/hikmanazwaw/kopi-kenangan-senja)
+
+## 📁 Struktur Folder
+
 ```
-UTS-WEB-HIKMA/
+.
 ├── index.html
-├── css/style.css
-├── js/script.js
-├── img/profile.jpg
-├── img/project-placeholder.jpg
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js        # sesuaikan dengan nama file JavaScript Anda
+├── img/
+│   ├── profile.jpg
+│   ├── portofolio.jpg
+│   ├── madinah.jpg
+│   └── kopi.jpg
 └── README.md
 ```
 
-## Menjalankan Secara Lokal
-1. Unduh atau ekstrak folder proyek.
-2. Buka `index.html` di browser (atau gunakan ekstensi Live Server di VS Code).
-3. Koneksi internet diperlukan untuk memuat Bootstrap dan font dari CDN.
+## 🚀 Cara Menjalankan
 
-## Mengganti Data dan Gambar
-- Nama, NPM, minat utama, email: cari teks `[NPM]`, `[Email]`, `[Isi minat utama...]` di `index.html`.
-- Foto profil: ganti `img/profile.jpg` dengan fotomu (nama file sama, rasio persegi).
-- Thumbnail proyek: ganti `img/project-placeholder.jpg`, atau buat gambar baru dan ubah atribut `src`.
-- Proyek: edit atribut `data-title`, `data-description`, `data-tech`, `data-repo`, `data-demo` pada setiap `<article>` (teks kartu juga perlu disamakan).
-- Nilai skill: ubah `data-level` pada `.progress-bar`.
-- Tarif kalkulator: ubah `WEBSITE_RATES` dan `COMPLEXITY_MULTIPLIERS` di `js/script.js`.
+1. Clone repository:
+   ```bash
+   git clone https://github.com/hikmanazwaw/UTS-WEB-HIKMA.git
+   ```
+2. Masuk ke folder proyek:
+   ```bash
+   cd UTS-WEB-HIKMA
+   ```
+3. Buka `index.html` di browser, atau gunakan ekstensi **Live Server** pada VS Code.
 
-## Mengunggah ke GitHub
-```bash
-git init
-git add .
-git commit -m "UTS Pemrograman Web: portfolio"
-git branch -M main
-git remote add origin [URL-REPOSITORY-GITHUB-ANDA]
-git push -u origin main
-```
+> Koneksi internet diperlukan karena Bootstrap, Bootstrap Icons, dan Google Fonts dimuat melalui CDN.
 
-## Mengaktifkan GitHub Pages
-1. Buka repository di GitHub, pilih **Settings** lalu **Pages**.
-2. Pada **Source**, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, lalu **Save**.
-3. Tunggu beberapa menit sampai alamat situs muncul.
+## 🌐 Deployment
 
-- URL repository: `[ISI SETELAH REPOSITORY DIBUAT]`
-- URL website: `[ISI SETELAH GITHUB PAGES AKTIF]`
+Website dipublikasikan menggunakan **GitHub Pages**:
 
-## Pengujian Fitur
-1. **Dark mode**: klik ikon bulan/matahari di navbar; tema dan ikon berubah.
-2. **Pencarian**: ketik "portfolio" di kolom cari; ketik "zzz" untuk melihat pesan "Proyek tidak ditemukan".
-3. **Filter**: klik tiap kategori; hanya proyek terkait yang tampil.
-4. **Modal**: klik "Lihat Detail" atau "Lihat Kode"; detail proyek muncul.
-5. **Kalkulator**: Portfolio, 3 halaman, Menengah menghasilkan Rp 900.000; isi 0, 2,5, atau kosong untuk melihat pesan error.
-6. **Formulir**: kirim kosong (muncul error per kolom), isi email salah, lalu isi semua dengan benar (muncul pesan berhasil).
-7. **Hamburger menu**: perkecil lebar browser di bawah 992px.
+1. Buka **Settings → Pages** pada repository.
+2. Pada _Source_, pilih branch `main` dan folder `/ (root)`.
+3. Simpan, lalu tunggu beberapa saat hingga link live website aktif.
 
-## Checklist UTS
-- [ ] Struktur folder sesuai, file terhubung dengan jalur relatif
-- [ ] Elemen semantik: header, nav, main, section, article, aside, footer
-- [ ] Bootstrap: navbar, grid, card, modal, form, badge, progress
-- [ ] Semua JavaScript di `js/script.js`, tanpa error di Console
-- [ ] Placeholder data pribadi sudah diganti
-- [ ] Repository GitHub dan GitHub Pages aktif, URL diisi di README
+## 👤 Penulis
+
+**Hikma Nazwa Agustin**
+Mahasiswa Sistem Informasi — Universitas Nusantara PGRI Kediri
+GitHub: [@hikmanazwaw](https://github.com/hikmanazwaw)
+
+---
+
+© 2026 Hikma Nazwa Agustin. Dibuat sebagai tugas perkuliahan.
