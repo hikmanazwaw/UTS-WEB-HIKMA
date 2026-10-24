@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio interaktif Hikma Nazwa Agustin, mahasiswa Sistem Informasi Universitas Nusantara PGRI Kediri."
+    />
+    <title>Portfolio | Hikma Nazwa Agustin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER & NAVBAR -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg site-nav">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home"
+            >HikmaNazwa<span class="text-accent">.</span>dev</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Buka menu navigasi"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tools">Tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button
+                  id="themeToggle"
+                  class="btn btn-outline-accent btn-sm"
+                  type="button"
+                  aria-label="Ganti mode terang atau gelap"
+                >
+                  <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 order-2 order-lg-1">
+              <p class="fs-5 mb-1 text-accent fw-semibold">Halo, saya</p>
+              <h1 class="display-4 fw-extrabold hero-title">
+                Hikma Nazwa Agustin
+              </h1>
+              <p class="lead mb-1">Mahasiswa Sistem Informasi</p>
+              <p class="text-muted-soft mb-4">
+                Berbekal latar belakang di bidang Sistem Informasi, saya
+                berfokus pada pengembangan aplikasi web dan solusi perangkat
+                lunak yang fungsional, rapi, serta mudah digunakan. Selalu
+                antusias menghadapi tantangan teknis, memahami alur kerja
+                software, dan mengembangkan keterampilan coding secara
+                berkelanjutan.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#projects" class="btn btn-accent btn-lg"
+                  >Lihat Proyek</a
+                >
+                <a href="#contact" class="btn btn-outline-accent btn-lg"
+                  >Hubungi Saya</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center">
+              <div class="hero-photo-wrap">
+                <img
+                  src="img/profile.jpg"
+                  alt="Foto profil Hikma Nazwa Agustin (placeholder)"
+                  class="hero-photo"
+                  width="600"
+                  height="600"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="py-section">
+        <div class="container">
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <p>
+                Saya Hikma Nazwa Agustin, mahasiswa Sistem Informasi yang
+                berfokus pada pengembangan aplikasi web dan solusi perangkat
+                lunak yang fungsional, rapi, serta intuitif untuk digunakan.
+                Berbekal pemahaman di bidang Sistem Informasi, saya memiliki
+                ketertarikan mendalam terhadap cara kerja perangkat lunak dari
+                balik layar mulai dari perancangan struktur dasar hingga
+                bagaimana sebuah sistem dapat menyelesaikan tantangan nyata
+                secara efektif dan efisien.
+              </p>
+              <p>
+                Saya selalu antusias dalam menghadapi tantangan teknis, memahami
+                alur kerja <i>software development</i>, dan mengembangkan
+                keterampilan <i>coding</i> secara berkelanjutan. Tujuan utama
+                saya adalah menguasai alur pembuatan aplikasi secara menyeluruh,
+                mulai dari perancangan antarmuka pengguna yang responsif,
+                penyusunan logika pemrograman, hingga pengelolaan data.
+                Pendekatan belajar saya berpusat pada praktik langsung membangun
+                proyek secara mandiri, mengeksplorasi teknologi baru, melakukan
+                iterasi kode, dan terus menyempurnakannya secara konsisten.
+              </p>
+              <p class="mb-0">
+                Fokus saya saat ini: HTML, CSS, Bootstrap, dan JavaScript dasar,
+                serta kebiasaan menyimpan pekerjaan di Git dan GitHub.
+              </p>
+            </div>
+            <aside class="col-lg-5" aria-label="Informasi singkat">
+              <div class="card info-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3">Informasi Singkat</h3>
+                  <dl class="row mb-0">
+                    <dt class="col-5">Nama</dt>
+                    <dd class="col-7">Hikma Nazwa Agustin</dd>
+                    <dt class="col-5">Program studi</dt>
+                    <dd class="col-7">Sistem Informasi</dd>
+                    <dt class="col-5">Perguruan Tinggi</dt>
+                    <dd class="col-7">Universitas Nusantara PGRI Kediri</dd>
+                    <dt class="col-5">Hobi</dt>
+                    <dd class="col-7">
+                      Membaca, Menulis, Menonton, dan Bermain Game
+                    </dd>
+                    <dt class="col-5">Minat utama</dt>
+                    <dd class="col-7 mb-0">Software Engineer</dd>
+                  </dl>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="py-section section-alt">
+        <div class="container">
+          <h2 class="section-title">Keterampilan</h2>
+          <p class="text-muted-soft mb-4">
+            <code>data-level</code> sesuai kemampuan Hikma Nazwa Agustin.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-filetype-html text-accent me-2"></i>HTML5
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Struktur halaman dengan elemen semantik.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat HTML5"
+                  >
+                    <div class="progress-bar" data-level="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-filetype-css text-accent me-2"></i>CSS3
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Tata letak, warna, dan transisi sederhana.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat CSS3"
+                  >
+                    <div class="progress-bar" data-level="70"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-bootstrap text-accent me-2"></i>Bootstrap 5
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Grid, komponen, dan utility class.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat Bootstrap 5"
+                  >
+                    <div class="progress-bar" data-level="65"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-filetype-js text-accent me-2"></i>JavaScript
+                    Dasar
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Fungsi, array, kondisi, dan event listener.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat JavaScript dasar"
+                  >
+                    <div class="progress-bar" data-level="70"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-diagram-3 text-accent me-2"></i>DOM
+                    Manipulation
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Mengubah tampilan halaman lewat JavaScript.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat DOM Manipulation"
+                  >
+                    <div class="progress-bar" data-level="65"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-git text-accent me-2"></i>Git dan GitHub
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Commit, push, dan publikasi proyek.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat Git dan GitHub"
+                  >
+                    <div class="progress-bar" data-level="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card skill-card h-100">
+                <div class="card-body">
+                  <h3 class="h5">
+                    <i class="bi bi-phone text-accent me-2"></i>Responsive Web
+                    Design
+                  </h3>
+                  <p class="small text-muted-soft">
+                    Tampilan nyaman di desktop, tablet, dan ponsel.
+                  </p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Tingkat Responsive Web Design"
+                  >
+                    <div class="progress-bar" data-level="65"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="py-section">
+        <div class="container">
+          <h2 class="section-title">Proyek</h2>
+          <div class="row g-3 mb-4 align-items-center">
+            <div class="col-lg-7">
+              <div
+                class="d-flex flex-wrap gap-2"
+                id="filterButtons"
+                role="group"
+                aria-label="Filter kategori proyek"
+              >
+                <button
+                  type="button"
+                  class="btn btn-sm btn-accent filter-btn"
+                  data-filter="all"
+                >
+                  Semua
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-accent filter-btn"
+                  data-filter="html-css"
+                >
+                  HTML &amp; CSS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-accent filter-btn"
+                  data-filter="javascript"
+                >
+                  JavaScript
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-accent filter-btn"
+                  data-filter="sistem-informasi"
+                >
+                  Sistem Informasi
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <label for="projectSearch" class="visually-hidden"
+                >Cari proyek</label
+              >
+              <input
+                type="search"
+                id="projectSearch"
+                class="form-control"
+                placeholder="Cari proyek berdasarkan judul atau deskripsi"
+              />
+            </div>
+          </div>
+
+          <div class="row g-4" id="projectList">
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="html-css javascript"
+                data-title="Personal Portfolio Website"
+                data-description="Website portfolio satu halaman dengan dark mode, filter proyek, kalkulator, dan validasi formulir."
+                data-tech="HTML5, CSS3, Bootstrap 5, JavaScript"
+              >
+                <img
+                  src="img/portofolio.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail Personal Portfolio Website"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Personal Portfolio Website</h3>
+                  <p class="small text-muted-soft">
+                    Website portfolio satu halaman dengan dark mode, filter
+                    proyek, kalkulator, dan validasi formulir.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS: Bootstrap</span>
+                    <span class="badge badge-tech">JavaScript</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="sistem-informasi"
+                data-title="Sistem Pengelolaan Informasi Kota Madinah"
+                data-description="Rancangan sistem untuk informasi terkait Kota Madinah dan
+                    rekomendasi destinasi wisata."
+                data-tech="HTML, CSS, JavaScript"
+                data-repo="https://github.com/hikmanazwaw/kota-madinah"
+              >
+                <img
+                  src="img/madinah.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail Sistem Pengelolaan Informasi Kota Madinah"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Kota Madinah</h3>
+                  <p class="small text-muted-soft">
+                    Rancangan sistem untuk informasi terkait Kota Madinah dan
+                    rekomendasi destinasi wisata.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS: Bootstrap</span>
+                    <span class="badge badge-tech">JavaScript</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="sistem-informasi javascript"
+                data-title="Kopi Kenangan Senja"
+                data-description="Contoh aplikasi web kecil untuk pemesanan kopi di sebuah kafe."
+                data-tech="HTML, CSS, JavaScript"
+                data-repo="https://github.com/hikmanazwaw/kopi-kenangan-senja"
+              >
+                <img
+                  src="img/kopi.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail Aplikasi Web Sederhana"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Kopi Kenangan Senja</h3>
+                  <p class="small text-muted-soft">
+                    Contoh aplikasi web kecil untuk pemesanan kopi di sebuah
+                    kafe.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS</span>
+                    <span class="badge badge-tech">JavaScript</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="html-css"
+                data-title="Landing Page Responsif"
+                data-description="Sebuah to do list untuk membantu Anda mengatur jadwal
+                    keseharian."
+                data-tech="HTML5, CSS3, Bootstrap 5"
+                data-repo="https://github.com/hikmanazwaw/to-do-list"
+              >
+                <img
+                  src="img/todolist.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail To Do List"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">To Do List</h3>
+                  <p class="small text-muted-soft">
+                    Sebuah to do list untuk membantu Anda mengatur jadwal
+                    keseharian.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS: Bootstrap</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="javascript"
+                data-title="Kasir Sederhana"
+                data-description="Latihan JavaScript fungsi untuk menghitung nilai dari input pengguna."
+                data-tech="HTML, JavaScript"
+                data-repo="https://github.com/hikmanazwaw/tugas-web-hikma/blob/main/web-javascript/kasir-js.html"
+              >
+                <img
+                  src="img/kasir.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail Kasir Sederhana"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Kasir Sederhana</h3>
+                  <p class="small text-muted-soft">
+                    Latihan JavaScript fungsi untuk menghitung nilai dari input
+                    pengguna.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">JavaScript</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 project-item">
+              <article
+                class="card project-card h-100"
+                data-category="sistem-informasi"
+                data-title="Rancangan Website Profile"
+                data-description="Informasi pribadi serta minat dalam pengembangan teknologi."
+                data-tech="HTML, CSS: Bootstrap, JavaScript"
+                data-repo="https://github.com/hikmanazwaw/hikmanazwaagustin.github.io"
+              >
+                <img
+                  src="img/webprofil.jpg"
+                  class="card-img-top"
+                  alt="Thumbnail Web Profil"
+                  loading="lazy"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Website Profile</h3>
+                  <p class="small text-muted-soft">
+                    Informasi pribadi serta minat dalam pengembangan teknologi.
+                  </p>
+                  <p class="mb-3">
+                    <span class="badge badge-tech">HTML</span>
+                    <span class="badge badge-tech">CSS: Bootstrap</span>
+                    <span class="badge badge-tech">JavaScript</span>
+                  </p>
+                  <div class="mt-auto d-flex gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Detail
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-accent btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                    >
+                      Lihat Kode
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <p
+            id="noProjectMessage"
+            class="text-center fs-5 mt-4 d-none"
+            role="status"
+          >
+            Proyek tidak ditemukan
+          </p>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section id="tools" class="py-section section-alt">
+        <div class="container">
+          <h2 class="section-title">Tools dan Teknologi</h2>
+          <div class="row g-4 text-center">
+            <div class="col-6 col-md-4 col-lg">
+              <div class="card tool-card h-100">
+                <div class="card-body">
+                  <i class="bi bi-code-square tool-icon"></i>
+                  <h3 class="h6 mt-2 mb-0">Visual Studio Code</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="card tool-card h-100">
+                <div class="card-body">
+                  <i class="bi bi-git tool-icon"></i>
+                  <h3 class="h6 mt-2 mb-0">Git</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="card tool-card h-100">
+                <div class="card-body">
+                  <i class="bi bi-github tool-icon"></i>
+                  <h3 class="h6 mt-2 mb-0">GitHub</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="card tool-card h-100">
+                <div class="card-body">
+                  <i class="bi bi-bootstrap tool-icon"></i>
+                  <h3 class="h6 mt-2 mb-0">Bootstrap</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg">
+              <div class="card tool-card h-100">
+                <div class="card-body">
+                  <i class="bi bi-terminal tool-icon"></i>
+                  <h3 class="h6 mt-2 mb-0">Terminal</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALCULATOR -->
+      <section id="calculator" class="py-section">
+        <div class="container">
+          <h2 class="section-title">Kalkulator Estimasi Biaya Website</h2>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <form id="calculatorForm" class="card info-card" novalidate>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label for="websiteType" class="form-label"
+                      >Jenis website</label
+                    >
+                    <select id="websiteType" class="form-select">
+                      <option value="landing">Landing Page</option>
+                      <option value="portfolio" selected>Portfolio</option>
+                      <option value="bisnis">Website Bisnis</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="pageCount" class="form-label"
+                      >Jumlah halaman</label
+                    >
+                    <input
+                      type="number"
+                      id="pageCount"
+                      class="form-control"
+                      min="1"
+                      step="1"
+                      placeholder="Contoh: 3"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="complexity" class="form-label"
+                      >Tingkat kompleksitas</label
+                    >
+                    <select id="complexity" class="form-select">
+                      <option value="sederhana">Sederhana</option>
+                      <option value="menengah">Menengah</option>
+                      <option value="kompleks">Kompleks</option>
+                    </select>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-accent w-100"
+                    id="calculateBtn"
+                  >
+                    Hitung Estimasi
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <div class="card info-card h-100">
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h3 class="h5">Hasil Estimasi</h3>
+                  <p id="calcError" class="text-danger d-none" role="alert"></p>
+                  <p id="calcResult" class="calc-result">Rp 0</p>
+                  <p id="calcDetail" class="small text-muted-soft mb-3">
+                    Isi formulir lalu tekan "Hitung Estimasi".
+                  </p>
+                  <p class="small text-muted-soft mb-0">
+                    Hasil hanya simulasi dan bukan penawaran harga profesional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-section section-alt">
+        <div class="container">
+          <h2 class="section-title">Kontak</h2>
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <form id="contactForm" class="card info-card" novalidate>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label for="contactName" class="form-label"
+                      >Nama lengkap</label
+                    >
+                    <input
+                      type="text"
+                      id="contactName"
+                      class="form-control"
+                      autocomplete="name"
+                    />
+                    <div class="invalid-feedback" id="contactNameError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      class="form-control"
+                      autocomplete="email"
+                    />
+                    <div class="invalid-feedback" id="contactEmailError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactSubject" class="form-label"
+                      >Subjek pesan</label
+                    >
+                    <input
+                      type="text"
+                      id="contactSubject"
+                      class="form-control"
+                    />
+                    <div
+                      class="invalid-feedback"
+                      id="contactSubjectError"
+                    ></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactMessage" class="form-label"
+                      >Isi pesan</label
+                    >
+                    <textarea
+                      id="contactMessage"
+                      class="form-control"
+                      rows="4"
+                    ></textarea>
+                    <div
+                      class="invalid-feedback"
+                      id="contactMessageError"
+                    ></div>
+                  </div>
+                  <button type="submit" class="btn btn-accent w-100">
+                    Kirim Pesan
+                  </button>
+                  <div
+                    id="contactSuccess"
+                    class="alert alert-success mt-3 mb-0 d-none"
+                    role="status"
+                  ></div>
+                </div>
+              </form>
+              <p class="small text-muted-soft mt-2">
+                Formulir ini hanya memvalidasi data di browser dan belum
+                mengirim pesan ke server.
+              </p>
+            </div>
+            <aside class="col-lg-5" aria-label="Tautan kontak">
+              <div class="card info-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3">Terhubung dengan saya</h3>
+                  <ul class="list-unstyled mb-3">
+                    <li class="mb-2">
+                      <i class="bi bi-envelope text-accent me-2"></i
+                      >[nazwahikma06@gmail.com]
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-github text-accent me-2"></i
+                      ><a
+                        href="https://github.com/hikmanazwaw"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub (Hikma Nazwa)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-linkedin text-accent me-2"></i
+                      ><a
+                        href="https://www.linkedin.com/in/hikma-nazwa-862bb32b9/"
+                        target="_blank"
+                        rel="noopener"
+                        >LinkedIn (Hikma Nazwa)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <p class="mb-0">
+          &copy; <span id="currentYear"></span> Hikma Nazwa Agustin. Hak cipta
+          dilindungi.
+        </p>
+        <nav aria-label="Navigasi footer">
+          <a href="#home" class="me-3">Home</a>
+          <a href="#projects" class="me-3">Projects</a>
+          <a href="#contact" class="me-3">Contact</a>
+          <a
+            href="https://github.com/hikmanazwaw"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="projectModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="projectModalTitle">Detail Proyek</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              id="modalImage"
+              src="img/project-placeholder.jpg"
+              class="img-fluid rounded mb-3"
+              alt=""
+            />
+            <p id="modalDescription"></p>
+            <p class="mb-2">
+              <strong>Teknologi:</strong> <span id="modalTech"></span>
+            </p>
+            <p class="mb-2">
+              <strong>Repository:</strong>
+              <a id="modalRepo" href="#" target="_blank" rel="noopener"></a>
+            </p>
+            <p class="mb-0">
+              <strong>Demo:</strong>
+              <a id="modalDemo" href="#" target="_blank" rel="noopener"></a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-accent"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

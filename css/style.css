@@ -1,0 +1,128 @@
+/* ===== Warna tema (ubah di sini) ===== */
+:root {
+  --navy: #0f1b3d;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --bg: #ffffff;
+  --bg-alt: #f3f5fb;
+  --text: #1b2340;
+  --text-soft: #4a5472;
+  --card-bg: #ffffff;
+  --border: #dfe3f0;
+  --shadow: 0 6px 20px rgba(15, 27, 61, 0.08);
+}
+
+[data-bs-theme="dark"] {
+  --bg: #0b1228;
+  --bg-alt: #101a38;
+  --text: #eef1fb;
+  --text-soft: #b4bcd8;
+  --card-bg: #162147;
+  --border: #26335f;
+  --accent: #8b87ff;
+  --accent-hover: #a5a2ff;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== Dasar ===== */
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); }
+.text-accent { color: var(--accent); }
+.text-muted-soft { color: var(--text-soft); }
+.fw-extrabold { font-weight: 800; }
+.py-section { padding: 5rem 0; }
+.section-alt { background: var(--bg-alt); }
+.section-title { font-weight: 800; margin-bottom: 1.5rem; padding-left: 0.9rem; border-left: 5px solid var(--accent); }
+
+/* ===== Navbar ===== */
+.site-nav { background: var(--navy); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); }
+.site-nav .navbar-brand, .site-nav .nav-link { color: #fff; }
+.site-nav .nav-link { opacity: 0.85; transition: opacity 0.2s, color 0.2s; }
+.site-nav .nav-link:hover, .site-nav .nav-link:focus { opacity: 1; color: #b9b6ff; }
+.site-nav .text-accent { color: #9a96ff; }
+.site-nav .navbar-toggler { border-color: rgba(255, 255, 255, 0.5); }
+.site-nav .navbar-toggler-icon { filter: invert(1); }
+
+/* ===== Tombol ===== */
+.btn-accent { background: var(--accent); border-color: var(--accent); color: #fff; transition: transform 0.2s, background 0.2s; }
+[data-bs-theme="dark"] .btn-accent { color: #0b1228; }
+.btn-accent:hover, .btn-accent:focus { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; transform: translateY(-2px); }
+[data-bs-theme="dark"] .btn-accent:hover { color: #0b1228; }
+.btn-outline-accent { border-color: var(--accent); color: var(--accent); background: transparent; transition: transform 0.2s, background 0.2s; }
+.btn-outline-accent:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
+[data-bs-theme="dark"] .btn-outline-accent:hover { color: #0b1228; }
+.site-nav .btn-outline-accent { border-color: #9a96ff; color: #fff; }
+.site-nav .btn-outline-accent:hover { background: #9a96ff; color: var(--navy); }
+.btn { min-height: 38px; }
+
+/* ===== Hero ===== */
+.hero {
+  min-height: 100vh;
+  padding: 7rem 0 4rem;
+  background: linear-gradient(135deg, var(--navy) 0%, #1d2a6b 60%, #3b3fa8 100%);
+  color: #fff;
+}
+.hero .text-accent { color: #b9b6ff; }
+.hero .text-muted-soft { color: #cfd5ee; }
+.hero .btn-outline-accent { border-color: #fff; color: #fff; }
+.hero .btn-outline-accent:hover { background: #fff; color: var(--navy); }
+.hero .btn-accent { background: #fff; border-color: #fff; color: var(--navy); }
+.hero .btn-accent:hover { background: #e6e8ff; color: var(--navy); }
+.hero-title { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+.hero-photo-wrap {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px dashed rgba(255, 255, 255, 0.45);
+}
+.hero-photo { width: min(320px, 70vw); aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35); }
+
+/* ===== Card ===== */
+.card { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); transition: transform 0.25s, box-shadow 0.25s; }
+.skill-card:hover, .project-card:hover, .tool-card:hover { transform: translateY(-5px); box-shadow: 0 14px 30px rgba(79, 70, 229, 0.18); }
+.project-card .card-img-top { border-radius: 14px 14px 0 0; aspect-ratio: 16 / 9; object-fit: cover; }
+.badge-tech { background: var(--bg-alt); color: var(--accent); border: 1px solid var(--border); font-weight: 600; }
+.tool-icon { font-size: 2.2rem; color: var(--accent); }
+.info-card dt { font-weight: 700; }
+.info-card dd { margin-bottom: 0.6rem; }
+
+/* ===== Progress ===== */
+.progress { height: 10px; background: var(--bg-alt); border-radius: 10px; }
+.progress-bar { width: 0; background: var(--accent); transition: width 1s ease; }
+
+/* ===== Kalkulator ===== */
+.calc-result { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; color: var(--accent); margin-bottom: 0.25rem; }
+
+/* ===== Form ===== */
+.form-control, .form-select { background-color: var(--card-bg); color: var(--text); border-color: var(--border); min-height: 44px; }
+.form-control:focus, .form-select:focus { border-color: var(--accent); box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25); background-color: var(--card-bg); color: var(--text); }
+.form-control::placeholder { color: var(--text-soft); opacity: 0.7; }
+
+/* ===== Modal ===== */
+.modal-content { background: var(--card-bg); color: var(--text); border-radius: 14px; }
+
+/* ===== Footer ===== */
+.site-footer { background: var(--navy); color: #d6dbf2; }
+.site-footer a { color: #fff; text-decoration: none; }
+.site-footer a:hover { color: #b9b6ff; }
+
+/* ===== Responsif tambahan ===== */
+@media (max-width: 767.98px) {
+  .py-section { padding: 3.5rem 0; }
+  .hero { text-align: center; }
+  .hero .d-flex { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
